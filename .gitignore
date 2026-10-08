@@ -1,0 +1,164 @@
+# =========================================================
+# Python
+# =========================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+
+# =========================================================
+# Jupyter / Interactive
+# =========================================================
+
+.ipynb_checkpoints/
+
+
+# =========================================================
+# IDE / Editor
+# =========================================================
+
+.vscode/
+.idea/
+
+# VS Code local settings
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+# =========================================================
+# Environment / Secrets
+# =========================================================
+
+.env
+.env.*
+!.env.example
+
+# API keys / tokens
+*.pem
+*.key
+
+
+# =========================================================
+# Machine Learning / Deep Learning
+# =========================================================
+
+# Model checkpoints
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.onnx
+
+# TensorBoard
+runs/
+tensorboard/
+
+# Training logs
+*.log
+logs/
+
+
+# =========================================================
+# Dataset
+# =========================================================
+
+# Local dataset
+data/images/
+data/masks/
+
+# Other large datasets
+datasets/
+raw_data/
+processed_data/
+
+
+# =========================================================
+# Generated outputs
+# =========================================================
+
+outputs/
+
+# Predictions
+predictions/
+
+# Generated visualizations
+visualizations/
+
+# Explainability outputs
+explainability/
+
+# VLM generated outputs
+vlm/
+
+
+# =========================================================
+# Experiment artifacts
+# =========================================================
+
+experiments_archive/
+
+# Temporary experiment files
+*.tmp
+*.temp
+
+# Generated CSV / JSON results
+results/
+*.csv
+*.json
+
+
+# =========================================================
+# Hugging Face / Model caches
+# =========================================================
+
+.cache/
+huggingface/
+.huggingface/
+
+# Hugging Face cache in common locations
+.cache/huggingface/
+
+
+# =========================================================
+# Temporary files
+# =========================================================
+
+*.bak
+*.swp
+*.swo
+*~
+
+# Windows
+*.lnk
+
+
+# =========================================================
+# Project-specific temporary files
+# =========================================================
+
+project_tree.txt
+debug/
+temp/
+tmp/

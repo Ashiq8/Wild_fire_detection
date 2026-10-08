@@ -1,0 +1,29 @@
+import torch
+from src.model_unetpp import UNetPlusPlus
+
+
+def main():
+    model = UNetPlusPlus(num_classes=1)
+    model.eval()
+
+    x = torch.randn(2, 3, 256, 256)
+
+    with torch.no_grad():
+        features = model.model.encoder(x)
+
+        print("\nEncoder feature maps:")
+        for i, feature in enumerate(features):
+            print(f"Feature {i}: {feature.shape}")
+
+        decoder_output = model.model.decoder(features)
+
+    print("\nDecoder output shape:", decoder_output.shape)
+
+    print(
+        "Segmentation head input channels:",
+        model.model.segmentation_head[0].in_channels
+    )
+
+
+if __name__ == "__main__":
+    main()
